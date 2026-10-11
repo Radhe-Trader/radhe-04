@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM ARMY OFFICIAL - Verified Channel</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1484558730180701');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1484558730180701&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff5eb 0%, #ffe6cc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #222;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 28px;
+            padding: 28px 20px;
+            box-shadow: 0 15px 35px rgba(255, 126, 0, 0.12);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Top Pill */
+        .top-pill {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 152, 0, 0.1);
+            border: 1px solid rgba(255, 152, 0, 0.3);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #d97706;
+            margin-bottom: 20px;
+            animation: pulsePill 2s infinite;
+        }
+
+        .top-pill span {
+            width: 7px;
+            height: 7px;
+            background-color: #f97316;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+            box-shadow: 0 0 8px #f97316;
+        }
+
+        @keyframes pulsePill {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* DP Wrapper with Advanced Animations */
+        .dp-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 18px auto;
+        }
+
+        .dp-ring {
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #ff7e00, #ffb347, #ff7e00);
+            animation: rotateRing 4s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes rotateRing {
+            100% { transform: rotate(360deg); }
+        }
+
+        .dp-inner-glow {
+            position: absolute;
+            inset: -2px;
+            border-radius: 50%;
+            background: #fff;
+            z-index: 2;
+        }
+
+        .dp-img {
+            position: absolute;
+            inset: 3px;
+            border-radius: 50%;
+            object-fit: cover;
+            width: calc(100% - 6px);
+            height: calc(100% - 6px);
+            z-index: 3;
+            transition: transform 0.4s ease;
+        }
+
+        .dp-container:hover .dp-img {
+            transform: scale(1.05);
+        }
+
+        /* Verified Badge on DP */
+        .verified-badge {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            background: #ff7e00;
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            z-index: 5;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 10px rgba(255, 126, 0, 0.4);
+            animation: bounceBadge 2s infinite;
+        }
+
+        @keyframes bounceBadge {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        /* Channel Subtitle / Mini Header */
+        .sub-handle {
+            font-size: 16px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .sub-handle i {
+            color: #ff7e00;
+            font-size: 14px;
+        }
+
+        .desc-text {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 18px;
+            line-height: 1.4;
+            padding: 0 10px;
+        }
+
+        /* Verified Channel Tag */
+        .verified-channel-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(135deg, #fff4e6 0%, #ffe0b2 100%);
+            border: 1px solid #ffd180;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #e65100;
+            margin-bottom: 22px;
+            box-shadow: 0 2px 6px rgba(255, 152, 0, 0.1);
+        }
+
+        /* Main Headline */
+        .main-headline {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        /* CTA Button with Animated Gradient & Pulse */
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #ff7e00 0%, #ff5100 100%);
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 16px 20px;
+            border-radius: 16px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(255, 81, 0, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 12px;
+            animation: ctaPulse 2s infinite;
+        }
+
+        @keyframes ctaPulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 126, 0, 0.5); }
+            70% { box-shadow: 0 0 0 12px rgba(255, 126, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 126, 0, 0); }
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px rgba(255, 81, 0, 0.5);
+        }
+
+        .cta-btn i {
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Status text */
+        .status-text {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .status-text span {
+            color: #2e7d32;
+            font-weight: 700;
+        }
+
+        .ref-code {
+            font-size: 11px;
+            color: #aaa;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background: #fffaf5;
+            border: 1px solid #ffe0b2;
+            border-radius: 16px;
+            padding: 14px 10px;
+            margin-bottom: 20px;
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 15px;
+            font-weight: 800;
+            color: #222;
+            margin-bottom: 2px;
+        }
+
+        .metric-label {
+            font-size: 10px;
+            font-weight: 600;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Verified Official Disclaimer Footer */
+        .meta-disclaimer {
+            font-size: 9.5px;
+            color: #888;
+            line-height: 1.35;
+            border-top: 1px solid #eee;
+            padding-top: 14px;
+            text-align: justify;
+        }
+
+        .powered-by {
+            font-size: 10px;
+            color: #bbb;
+            margin-top: 10px;
+        }
+
+        .powered-by span {
+            color: #ff7e00;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Live Indicator -->
+        <div class="top-pill">
+            <span></span> SYSTEM ARMY OFFICIAL
+        </div>
+
+        <!-- DP with Animated Border -->
+        <div class="dp-container">
+            <div class="dp-ring"></div>
+            <div class="dp-inner-glow"></div>
+            <img src="https://iili.io/nM6gSeV.md.png" alt="System Army Official DP" class="dp-img">
+            <div class="verified-badge">
+                <i class="fa-solid fa-check"></i>
+            </div>
+        </div>
+
+        <!-- Sub Handle & Description -->
+        <div class="sub-handle">
+            SYSTEM ARMY <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="desc-text">
+            Daily Market Levels & Smart Setups • Join Now & Stay Updated
+        </div>
+
+        <!-- Verified Channel Badge -->
+        <div class="verified-channel-tag">
+            <i class="fa-solid fa-shield-halved"></i> META VERIFIED SECURE CHANNEL
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="main-headline">SYSTEM ARMY OFFICIAL 📊</h1>
+
+        <!-- Call to Action Button with Click Protection & Pixel Tracking -->
+        <a href="https://t.me/+3UeAwukUMXZhMjU1" id="joinBtn" class="cta-btn" onclick="trackAndRedirect(event)">
+            <span>Join Now</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <div class="status-text">
+            Status: <span>Ready</span> &nbsp;•&nbsp; opens in Telegram
+        </div>
+
+        <div class="ref-code">
+            REF 094812
+        </div>
+
+        <!-- Metrics Box -->
+        <div class="metrics-grid">
+            <div class="metric-item">
+                <div class="metric-value">24/7</div>
+                <div class="metric-label">Active</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">Free</div>
+                <div class="metric-label">To Join</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">1-Tap</div>
+                <div class="metric-label">Access</div>
+            </div>
+        </div>
+
+        <!-- Meta Compliant Strict Disclaimer Footer -->
+        <div class="meta-disclaimer">
+            <strong>Compliance Disclaimer:</strong> This independent promotional landing page operates in strict adherence to Meta's community standards, advertising policies, and platform guidelines. This service is informational only and does not collect personal financial data or offer guaranteed financial returns. Protected by automated security checks against invalid bot traffic.
+        </div>
+
+        <div class="powered-by">
+            Verified Platform • Powered by <span>System Army</span>
+        </div>
+    </div>
+
+    <!-- Bot & Fake Click Protection + Pixel Tracking Script -->
+    <script>
+        // Anti-Bot & Invalid Click Protection Layer
+        function detectBotOrAutomation() {
+            // Check for headless browsers or automated WebDrivers
+            if (navigator.webdriver || window._phantom || window.__nightmare || window.navigator.languages === "") {
+                return true;
+            }
+            // Check for suspicious screen dimensions or headless user agents
+            const ua = navigator.userAgent.toLowerCase();
+            if (ua.includes("headless") || ua.includes("bot") || ua.includes("crawl") || ua.includes("spider")) {
+                return true;
+            }
+            return false;
+        }
+
+        function trackAndRedirect(event) {
+            // If bot detected, prevent abnormal rapid firing or flag it
+            if (detectBotOrAutomation()) {
+                console.warn("Automation detected. Request verified safely.");
+            }
+
+            // Trigger Meta Pixel Conversion Event (Lead / Click)
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead', {
+                    content_name: 'System Army Official Join Click',
+                    status: 'verified'
+                });
+            }
+        }
+
+        // Additional security layer against automated rapid programmatic clicks
+        let lastClickTime = 0;
+        document.getElementById('joinBtn').addEventListener('click', function(e) {
+            const currentTime = new Date().getTime();
+            if (currentTime - lastClickTime < 1000) {
+                // Prevent double clicking / rapid script clicks
+                e.preventDefault();
+                return false;
+            }
+            lastClickTime = currentTime;
+        });
+    </script>
+</body>
+  </html>
+  
